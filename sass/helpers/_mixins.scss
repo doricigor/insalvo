@@ -1,0 +1,13 @@
+@mixin gold-line {
+    content: '';
+    background-color: $color-gold;
+    height: 2px;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@mixin bg-pos {
+    background-position: center;
+    background-size: cover;
+}

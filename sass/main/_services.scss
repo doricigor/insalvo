@@ -1,0 +1,67 @@
+.services {
+    text-align: center;
+    max-height: 100%;
+    margin-bottom: 7rem;
+
+    &__heading {
+
+        &::after {
+            @include gold-line;
+            width: 4rem;
+            margin: 2rem auto;
+        }
+    }
+
+    &__text {
+        color: $light-text;
+        font-size: 1.4rem;
+    }
+
+    &__card {
+        margin: 7rem 0 10rem 0;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 4rem 0;
+            width: 50%;
+        }
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            margin: 7rem auto 5rem auto;
+        }
+
+        &__heading {
+            margin-top: 3rem;
+        }
+
+        &--1 {
+            background-image: url(../img/services1.png);
+            @include bg-pos;
+            height: 100%;
+        }
+
+        &--2 {
+            background-image: url(../img/services2.png);
+            @include bg-pos;
+            height: 100%;
+        }
+
+        &--3 {
+            background-image: url(../img/services3.png);
+            @include bg-pos;
+            height: 100%;
+        }
+
+        &--4 {
+            background-image: url(../img/services4.png);
+            @include bg-pos;
+            height: 100%;
+        }
+    }
+}

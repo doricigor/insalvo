@@ -1,0 +1,38 @@
+.clients {
+    text-align: center;
+
+    &__details {
+        margin-bottom: 3rem;
+    }
+
+    &__heading {
+
+        &::after {
+            @include gold-line;
+            width: 5rem;
+            margin: 2rem auto;
+        }
+    }
+
+    &__cards {
+        margin: 10rem auto;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-wrap: nowrap;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-wrap: wrap;
+            margin: 3rem auto;
+        }
+    }
+
+    &__card {
+        margin: auto;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 4rem;
+        }
+    }
+
+}

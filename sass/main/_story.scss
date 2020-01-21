@@ -1,0 +1,73 @@
+.story {
+    background-color: $color-silver;
+    max-height: 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1rem 0 5rem 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding-top: 3rem;
+    }
+
+    &__border {
+        border: 2px solid $color-gold;
+
+        @media only screen and (max-width: $bp-large) {
+            border: none;
+            width: 50%;
+            margin: 0 0 0 auto;
+            transform: translateY(7rem);
+        }
+    }
+
+    &__img {
+        width: 105%;
+        transform: translate(-3rem, -2rem);
+
+        @media only screen and (max-width: $bp-large) {
+            width: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 0;
+        }
+
+    }
+
+    &__heading {
+
+        &--1 {
+            &::after {
+                @include gold-line;
+                width: 4rem;
+                margin: 2rem 0;
+            }
+        }
+
+        &--2 {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__text {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+
+}

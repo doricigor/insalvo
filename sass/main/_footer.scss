@@ -1,0 +1,124 @@
+footer {
+    background-color: $color-dark-2;
+
+    @media only screen and (max-width: $bp-small) {
+        text-align: center;
+    }
+}
+
+.footer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 3rem 0;
+    }
+
+    &__row {
+        @media only screen and (max-width: $bp-large) {
+            flex-wrap: nowrap;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &--1 {
+        padding-right: 9rem;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0 1rem;
+        }
+    }
+
+    &--2 {
+        padding-left: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+            padding-top: 3rem;
+        }
+    }
+
+    &--3 {
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+            padding-top: 3rem;
+        }
+    }
+
+    &__text {
+        color: $light-text;
+        font-size: 1.4rem;
+        padding: 2rem 3rem 2rem 0;
+    }
+
+    &__social {
+        i {
+            font-size: 1.4rem;
+            border-radius: 50%;
+            padding: 1.5rem 1.6rem;
+            border: 1px solid $color-gold;
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 1.7rem;
+
+        &::after {
+            @include gold-line;
+            width: 3rem;
+            margin: 1.3rem 0;
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 1.3rem auto;
+            }
+        }
+    }
+
+    &__links {
+        list-style: none;
+        font-size: 1.5rem;
+
+        &__item {
+            line-height: 2.5;
+        }
+
+        &__link:link,
+        &__link:active,
+        &__link:visited {
+            text-decoration: none;
+            color: $light-text;
+        }
+    }
+
+    &__address {
+
+        &__item {
+            font-size: 1.5rem;
+            line-height: 2.5;
+
+            i {
+                font-size: 1rem;
+                margin-left: -1.7rem;
+                padding-right: .3rem;
+            }
+        }
+
+        &__link:link,
+        &__link:active,
+        &__link:visited {
+            text-decoration: none;
+            color: $light-text;
+        }
+    }
+}

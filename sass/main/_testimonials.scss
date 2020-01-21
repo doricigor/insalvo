@@ -1,0 +1,33 @@
+.testi {
+    background-image: url(../img/testicover.png);
+    background-size: cover;
+    background-position: top;
+    max-height: 100%;
+    margin-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+
+    &__content {
+        border: 1px solid $color-gold;
+        text-align: center;
+        padding: 8rem;
+
+    }
+
+    &__heading-2 {
+        color: $color-white;
+
+        &::after {
+            @include gold-line;
+            width: 5rem;
+            margin: 2rem auto;
+        }
+
+    }
+
+    &__text {
+        color: $light-text;
+        font-size: 1.4rem;
+    }
+}

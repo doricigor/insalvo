@@ -1,0 +1,43 @@
+.cover {
+    background-image: url(../img/cover.png);
+    @include bg-pos;
+
+    @media only screen and (max-width: $bp-large) {
+        background-position: right;
+    }
+
+    margin-bottom: 6rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    &__details {
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+
+    }
+
+    &__heading {
+
+        &::after {
+            @include gold-line;
+            width: 4rem;
+            margin: 2rem 0;
+        }
+    }
+
+    &__text {
+        color: $dark-text;
+        font-size: 1.4rem;
+        max-width: 50rem;
+    }
+}
