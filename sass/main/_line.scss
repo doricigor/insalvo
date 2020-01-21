@@ -9,12 +9,25 @@
 
     @media only screen and (max-width: $bp-smallest) {
         margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-mob) {
+        display: none;
     }
 
 
     &__contact {
         i {
-            margin-right: 1.5srem;
+            margin-right: 1.5rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin: 0 .5rem;
+
+                &:first-child {
+                    margin-left: 1rem;
+                }
+            }
         }
 
     }
@@ -24,6 +37,14 @@
 
         i {
             margin-left: 2rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-left: 1rem;
+
+                &:last-child {
+                    margin-right: 1rem;
+                }
+            }
         }
     }
 
@@ -31,6 +52,10 @@
         color: $color-white;
         display: inline-block;
         margin: .5rem 2rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: .5rem .5rem;
+        }
     }
 
     &__row {

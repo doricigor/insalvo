@@ -62,17 +62,34 @@ html {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 46.87em) {
     .line {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 25em) {
+    .line {
+      display: none; } }
   .line__contact i {
-    margin-right: 1.5srem; }
+    margin-right: 1.5rem; }
+    @media only screen and (max-width: 46.87em) {
+      .line__contact i {
+        margin: 0 .5rem; }
+        .line__contact i:first-child {
+          margin-left: 1rem; } }
   .line__follow {
     text-align: right; }
     .line__follow i {
       margin-left: 2rem; }
+      @media only screen and (max-width: 46.87em) {
+        .line__follow i {
+          margin-left: 1rem; }
+          .line__follow i:last-child {
+            margin-right: 1rem; } }
   .line__text {
     color: #ffffff;
     display: inline-block;
     margin: .5rem 2rem; }
+    @media only screen and (max-width: 46.87em) {
+      .line__text {
+        margin: .5rem .5rem; } }
   @media only screen and (max-width: 62.5em) {
     .line__row {
       flex-wrap: nowrap; } }
@@ -86,6 +103,11 @@ html {
   @media only screen and (max-width: 62.5em) {
     .header__logo img {
       padding-bottom: 1rem; } }
+  @media only screen and (max-width: 46.87em) {
+    .header__logo img {
+      width: 10rem;
+      margin-left: 1rem;
+      margin-top: .5rem; } }
 
 @media only screen and (max-width: 46.87em) {
   .nav {
@@ -128,12 +150,18 @@ html {
   display: none;
   position: absolute;
   top: 6rem;
-  right: 2rem; }
+  right: 5rem; }
   @media only screen and (max-width: 46.87em) {
     .miniNav:link,
     .miniNav:visited,
     .miniNav:active .miniNav:hover {
       display: block; } }
+  @media only screen and (max-width: 46.87em) {
+    .miniNav:link,
+    .miniNav:visited,
+    .miniNav:active .miniNav:hover {
+      top: 2rem;
+      right: 3rem; } }
   .miniNav:link::before, .miniNav:link::after,
   .miniNav:visited::before,
   .miniNav:visited::after,
@@ -275,6 +303,9 @@ html {
     @media only screen and (max-width: 46.87em) {
       .story__content {
         margin: 0; } }
+    @media only screen and (max-width: 46.87em) {
+      .story__content {
+        padding: 1rem 4rem 1rem 4rem; } }
   .story__heading--1::after {
     content: '';
     background-color: #af943e;
@@ -386,6 +417,9 @@ footer {
     color: #a3a3a3;
     font-size: 1.4rem;
     padding: 2rem 3rem 2rem 0; }
+    @media only screen and (max-width: 46.87em) {
+      .footer__text {
+        padding-left: 3rem; } }
   .footer__social i {
     font-size: 1.4rem;
     border-radius: 50%;

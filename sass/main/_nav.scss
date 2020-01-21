@@ -47,10 +47,15 @@
     display: none;
     position: absolute;
     top: 6rem;
-    right: 2rem;
+    right: 5rem;
 
     @media only screen and (max-width: $bp-smallest) {
         display: block;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        top: 2rem;
+        right: 3rem;
     }
 
     &::before,
